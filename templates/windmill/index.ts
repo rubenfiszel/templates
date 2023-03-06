@@ -14,7 +14,7 @@ export function generate(input: Input): Output {
         `BASE_URL=https://${input.domain}`,
         `DATABASE_URL=postgres://postgres:${databasePassword}@${input.projectName}_${input.databaseServiceName}:5432/${input.projectName}?sslmode=disable`,
         `RUST_LOG=info`,
-        `NUM_WORKERS=1`,
+        `NUM_WORKERS=3`,
         `DISABLE_SERVER=false`,
         `METRICS_ADDR=false`,
         `KEEP_JOB_DIR=false`,
